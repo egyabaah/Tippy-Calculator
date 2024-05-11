@@ -7,6 +7,18 @@
     tools:context=".MainActivity">
 
     <!-- Views on the left side -->
+
+    <Button
+        android:id="@+id/btnRoundUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Round Up"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRoundDown"
+        app:layout_constraintStart_toEndOf="@+id/btnRoundDown"
+        app:layout_constraintTop_toTopOf="@+id/btnRoundDown" />
+
     <TextView
         android:id="@+id/tvBaseLabel"
         android:layout_width="wrap_content"
@@ -117,4 +129,15 @@
         app:layout_constraintStart_toStartOf="@+id/seekBarTip"
         app:layout_constraintTop_toBottomOf="@+id/seekBarTip"
         tools:text="Acceptable" />
+
+    <Button
+        android:id="@+id/btnRoundDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:text="Round Down"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalLabel" />
 </androidx.constraintlayout.widget.ConstraintLayout>
